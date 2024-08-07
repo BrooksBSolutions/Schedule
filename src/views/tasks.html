@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="/taskscss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css">
+</head>
+<body>
+    <h1>Task Assignment</h1>
+    <div id="weeks"></div>
+    <div id="months"></div>
+
+    <!-- Modal -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <form class="task-form" id="taskForm">
+                <label for="itemSearch">Search Item:</label>
+                <input type="text" id="itemSearch" name="itemSearch" placeholder="Search for an item...">
+                <div id="searchResults"></div>
+                
+                <label for="selectedItem">Selected Item:</label>
+                <input type="text" id="selectedItem" name="selectedItem" readonly required>
+
+                <label for="task">Task Name:</label>
+                <input type="text" id="task" name="task" required>
+                
+                <label for="person">Person:</label>
+                <select id="person" name="person" required>
+                    <option value="" selected disabled>Select a person</option>
+                </select>
+                
+                <label for="hours">Hours:</label>
+                <input type="number" id="hours" name="hours" required>
+                
+                <label for="timeline">Timeline:</label>
+                <input type="text" id="timeline" name="timeline" readonly required>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-message">The ending day of the Timeline will set due date</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+    <script src="/tasksjs"></script>
+</body>
+</html>

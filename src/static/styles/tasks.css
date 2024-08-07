@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.task-form label {
+    margin-bottom: 5px;
+}
+
+.task-form select,
+.task-form input,
+.task-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.task-form input[type="text"],
+.task-form input[type="number"],
+.task-form select,
+.task-form textarea {
+    background-color: #444;
+    color: #fff;
+}
+
+.task-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.task-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.search-results {
+    background-color: #444;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.search-result {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background-color: #555;
+}
+
+.contact-message {
+    position: fixed;
+    top: 600px;
+    left: 140px;
+    color: #ffffff; /* Light text */
+    background-color: #333; /* Dark background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    z-index: 100; /* Set a high z-index*/
+}
